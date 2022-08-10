@@ -14,6 +14,10 @@ A user chooses the settings on the left and clicks a button. The desired survey 
 
 <img width="849" alt="image" src="https://user-images.githubusercontent.com/8971846/184012240-d3074667-8ed0-4619-8f00-c90cdd38f152.png">
 
+---
+
 <img width="1001" alt="image" src="https://user-images.githubusercontent.com/8971846/184012699-e46b6003-6e52-4adf-afd1-0902d5ec5e8c.png">
+
+---
 
 <img width="858" alt="image" src="https://user-images.githubusercontent.com/8971846/184013096-1ca30c5b-50d1-4228-94b3-176a699e09d6.png">
