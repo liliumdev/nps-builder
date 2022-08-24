@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <div class="part-1">
+        <label>Survey Title</label><br />
+        <input class="survey title" type="text" /><br /><br />
+        <label for="s_descp">Survey description</label><br />
+        <input class="survey description" type="text"" style=" padding: 0 0 80px
+        5px ; color:black" /><br /><br />
+        <label>Survey Type</label><br />
+        <div style="margin-top: 15px">
+          <input class="choice-stars" type="radio" name="drone" checked />
+          <label class="radio-buttons">Stars (0-5)</label>
+        </div>
+        <div>
+          <input class="choice-rating" type="radio" name="drone" />
+          <label class="radio-buttons">Rating (0-10)</label>
+        </div>
+        <div>
+          <input class="choice-emoji" type="radio" name="drone" />
+          <label class="radio-buttons">Emoji (Happy, Sad)</label>
+        </div>
+      </div>
+      <div class="part-2">
+        <h1 hidden style="font-size: 30px; margin-top: 15%">You happy ?</h1>
+        <h2 hidden style="margin-top: -15px">
+          Did you like the features on our website ?
+        </h2>
+        <div hidden class="rate checked_stars">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+        </div>
+        <div hidden class="container checked_rating">
+          <div class="chart-scale">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">10</button>
+          </div>
+        </div>
+        <div hidden class="checked_emoji">
+          <span class="emoji emoji--happy"></span>
+          <span class="emoji emoji--sad"></span>
+        </div>
+      </div>
+    </div>
+    <button class="button button2 render">Render Survey</button>
+    <script src="javascript.js"></script>
+  </body>
+</html>
