@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body>
+    <div class="left-side">
+      <label for="title">Survey Title</label>
+      <input class="s-title" type="text" id="title" name="title" /><br /><br />
+
+      <label for="description">Survey Description</label>
+      <input
+        class="s-description"
+        type="text"
+        id="description"
+        name="description"
+      /><br /><br />
+      <label>Survey Type</label>
+      <p><input type="radio" class="stars" name="oddsPref" /> Stars (0-5)</p>
+      <p><input type="radio" class="rating" name="oddsPref" /> Rating (0-10)</p>
+      <p><input type="radio" class="emoji" name="oddsPref" /> Emoji (happy,sad)</p>
+
+      <button>Render Survey</button>
+    </div>
+    <div class="middle-div"></div>
+    <div class="right-side">
+      <h1 hidden></h1>
+      <h2 hidden></h2>
+      <div>
+        <div hidden class="hidden-stars">
+      <div class="stars-rating">        
+        <h3 class="star-rating" id="star-rating-1">★</h3>
+        <h3 class="star-rating" id="star-rating-2">★</h3>
+        <h3 class="star-rating" id="star-rating-3">★</h3>
+        <h3 class="star-rating" id="star-rating-4">★</h3>
+        <h3 class="star-rating" id="star-rating-5">★</h3>  
+      </div>
+    </div>
+    </div>
+    <div>
+       <div hidden class="hidden-scores">
+      <div class="score-rating">      
+        <div class="box-rating" id="box-rating-1">①</div>
+        <div class="box-rating" id="box-rating-2">②</div>
+        <div class="box-rating" id="box-rating-3">③</div>
+        <div class="box-rating" id="box-rating-4">④</div>
+        <div class="box-rating" id="box-rating-5">⑤</div>
+        <div class="box-rating" id="box-rating-6">⑥</div>
+        <div class="box-rating" id="box-rating-7">⑦</div>
+        <div class="box-rating" id="box-rating-8">⑧</div>
+        <div class="box-rating" id="box-rating-9">⑨</div>
+        <div class="box-rating" id="box-rating-10">⑩</div>    
+      </div>
+    </div>
+    </div>
+    <div>
+        <div hidden class="hidden-emojis">
+      <div class="emoji-rating">
+        <h3 id="happy-smiley">😃</h3>
+        <h3 id="sad-smiley">😔</h3>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script src="javascript.js"></script>
+   
+    </script>
+  </body>
+</html>
